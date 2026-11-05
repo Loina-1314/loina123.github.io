@@ -22,10 +22,8 @@ GitHub Pages：
 ## 📂 仓库文件结构
 
 ```
-├── Loina三合一 (5).html   # 主入口页面
-├── dict.html              # MiNa词典完整页面
-├── player.html            # Mango Player播放器页面
-└── README.md              # 项目说明文档（本文件）
+├── index.html   # 主入口页面（三合一：首页 + MiNa词典 + Mango播放器）
+└── README.md    # 项目说明文档（本文件）
 ```
 
 ## ✨ 功能特性
