@@ -141,6 +141,50 @@ nav{background:rgba(247,249,254,.78);backdrop-filter:blur(14px);-webkit-backdrop
 .m-info .m-style{margin-top:6px;font-size:13px;color:var(--text-light)}
 .m-info .m-bar{height:4px;border-radius:4px;background:var(--primary-soft);margin-top:14px;overflow:hidden}
 .m-info .m-bar i{display:block;height:100%;width:0;border-radius:4px;background:var(--grad);transition:width 1s ease}
+/* ===== MiNa AI 引擎 ===== */
+.ai-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+#ai{scroll-margin-top:76px}
+.ai-engine{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px;box-shadow:var(--shadow);transition:transform .35s ease,box-shadow .35s ease;position:relative;overflow:hidden}
+.ai-engine:hover{transform:translateY(-7px);box-shadow:var(--shadow-lg)}
+.ai-engine:before{content:'';position:absolute;left:0;top:0;right:0;height:3px;background:var(--grad);opacity:.92}
+.ai-engine.is-pro{background:linear-gradient(160deg,var(--primary-soft),var(--card) 62%);border-color:var(--primary)}
+.ai-ver{display:inline-flex;align-items:center;gap:7px;font-size:11.5px;font-weight:800;letter-spacing:.4px;color:var(--primary);background:var(--primary-soft);padding:5px 12px;border-radius:999px;margin-bottom:14px}
+.ai-engine.is-pro .ai-ver{background:var(--grad);color:#fff}
+.ai-engine h3{font-size:19px;font-weight:800;color:var(--text);margin-bottom:8px}
+.ai-engine .ai-desc{color:var(--text-light);font-size:13.5px;line-height:1.8;margin-bottom:16px}
+.ai-feats{display:flex;flex-direction:column;gap:9px}
+.ai-feat{display:flex;align-items:flex-start;gap:9px;font-size:13px;color:var(--text);line-height:1.6}
+.ai-feat svg{width:15px;height:15px;flex-shrink:0;margin-top:2px;color:var(--primary)}
+.ai-engine .ai-status{display:flex;gap:8px;margin-top:18px;flex-wrap:wrap}
+.ai-engine .ai-status span{font-size:11px;font-weight:700;padding:4px 10px;border-radius:999px;background:var(--primary-soft);color:var(--primary)}
+.ai-cap-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:26px}
+.ai-cap{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:var(--shadow);transition:transform .35s ease,box-shadow .35s ease,border-color .35s ease}
+.ai-cap:hover{transform:translateY(-6px);box-shadow:var(--shadow-lg);border-color:var(--primary)}
+.ai-cap .ico{width:42px;height:42px;border-radius:13px;background:var(--primary-soft);color:var(--primary);display:flex;align-items:center;justify-content:center;margin-bottom:14px}
+.ai-cap .ico svg{width:20px;height:20px}
+.ai-cap h4{font-size:15px;font-weight:700;color:var(--text);margin-bottom:6px}
+.ai-cap p{font-size:12.5px;color:var(--text-light);line-height:1.75}
+.ai-demo{margin-top:40px;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:28px;box-shadow:var(--shadow)}
+.ai-demo-top{display:flex;align-items:center;gap:11px;margin-bottom:8px}
+.ai-demo-top .ico{width:38px;height:38px;border-radius:12px;background:var(--grad);color:#fff;display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.ai-demo-top .ico svg{width:19px;height:19px}
+.ai-demo-top h3{font-size:18px;font-weight:800;color:var(--text)}
+.ai-demo .ai-demo-sub{font-size:13.5px;color:var(--text-light);line-height:1.85}
+.ai-flow{display:grid;grid-template-columns:1fr 44px 1.3fr;align-items:stretch;margin-top:20px}
+.ai-prompt{background:var(--primary-soft);border:1px dashed var(--line);border-radius:16px;padding:20px;align-self:center}
+.ai-prompt .lbl{font-size:10.5px;font-weight:800;letter-spacing:.24em;color:var(--primary);margin-bottom:9px}
+.ai-prompt .txt{font-size:13.5px;color:var(--text);line-height:1.8}
+.ai-arrow{display:flex;align-items:center;justify-content:center;color:var(--primary)}
+.ai-arrow svg{width:24px;height:24px}
+.ai-term{background:#141a2b;border:1px solid rgba(255,255,255,.09);border-radius:16px;overflow:hidden;box-shadow:0 14px 34px rgba(16,19,30,.28)}
+.ai-term-bar{display:flex;align-items:center;gap:6px;padding:10px 14px;background:rgba(255,255,255,.05)}
+.ai-term-bar i{width:9px;height:9px;border-radius:50%;display:block}
+.ai-term-bar .t1{background:#ff5f56}.ai-term-bar .t2{background:#ffbd2e}.ai-term-bar .t3{background:#27c93f}
+.ai-term-bar em{font-style:normal;font-size:10.5px;color:rgba(255,255,255,.45);margin-left:auto;letter-spacing:.1em}
+.ai-term-body{padding:16px 18px;font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;font-size:12px;line-height:1.9;color:#a9b8d4;overflow-x:auto;white-space:pre}
+.ai-term-body .k{color:#b79bff}
+.ai-term-body .s{color:#8ee6a8}
+.ai-term-body .c{color:#64748b}
 /* ===== 项目 ===== */
 .proj-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
 .proj-card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:26px;box-shadow:var(--shadow);transition:transform .35s ease,box-shadow .35s ease}
@@ -167,7 +211,7 @@ footer{background:var(--card);border-top:1px solid var(--line);color:var(--text-
 footer .f-logo{font-size:19px;font-weight:800;color:var(--primary);margin-bottom:8px;letter-spacing:1px}
 footer .f-tag{font-size:12.5px;opacity:.8;margin-top:4px}
 /* ===== toast ===== */
-#toast{position:fixed;left:50%;bottom:34px;transform:translateX(-50%) translateY(16px);background:rgba(26,32,48,.92);color:#fff;font-size:13.5px;padding:11px 20px;border-radius:999px;opacity:0;pointer-events:none;transition:all .35s ease;z-index:999;box-shadow:0 10px 30px rgba(0,0,0,.25)}
+#toast{position:fixed;left:50%;bottom:104px;transform:translateX(-50%) translateY(16px);background:rgba(26,32,48,.92);color:#fff;font-size:13.5px;padding:11px 20px;border-radius:999px;opacity:0;pointer-events:none;transition:all .35s ease;z-index:999;box-shadow:0 10px 30px rgba(0,0,0,.25)}
 #toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
 /* ===== 响应式 ===== */
 @media(max-width:960px){
@@ -176,6 +220,9 @@ footer .f-tag{font-size:12.5px;opacity:.8;margin-top:4px}
   .btn-row{justify-content:center}
   .hero-txt .hi{justify-content:center}
   .about-grid,.music-grid,.proj-grid{grid-template-columns:1fr 1fr}
+  .ai-grid,.ai-cap-grid{grid-template-columns:1fr 1fr;gap:16px}
+  .ai-flow{grid-template-columns:1fr;row-gap:10px}
+  .ai-arrow svg{transform:rotate(90deg)}
 }
 @media(max-width:640px){
   .nav-in{flex-wrap:nowrap}
@@ -189,7 +236,22 @@ footer .f-tag{font-size:12.5px;opacity:.8;margin-top:4px}
   .hero-art .ring{width:260px;height:260px;margin:-130px 0 0 -130px}
   .hero-art .chip.c1{left:0}
   .hero-art .chip.c2{right:0}
+  .gb-card{padding:20px 16px 12px;border-radius:20px}
+  .gb-nick{flex:1 1 100%}
+  .gb-count{margin-left:0}
+  .gb-send{margin-left:auto;padding:8px 18px}
+  .gb-list{max-height:none}
+  .gb-txt{font-size:13px}
   .about-grid,.music-grid,.proj-grid{grid-template-columns:1fr}
+  .ai-grid,.ai-cap-grid{grid-template-columns:1fr}
+  .ai-cap-grid{grid-template-columns:1fr 1fr;gap:12px}
+  .ai-cap{padding:16px 14px;border-radius:16px}
+  .ai-cap .ico{width:36px;height:36px;border-radius:11px;margin-bottom:10px}
+  .ai-cap .ico svg{width:17px;height:17px}
+  .ai-cap h4{font-size:13.5px}
+  .ai-cap p{font-size:11.5px}
+  .ai-demo{padding:20px 18px;border-radius:18px}
+  .ai-term-body{font-size:11px}
   .container{padding:64px 5%}
   .section-title{font-size:26px}
   .stats{gap:10px}
@@ -252,7 +314,7 @@ body{background:transparent}
 .capsule-pill .cp-mq{display:inline-block;vertical-align:middle;text-align:left;text-overflow:clip}
 .capsule-pill .cp-s.mq .cp-mq{animation:cpMarquee 7s linear infinite}
 @keyframes cpMarquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
-.cp-lrc{max-width:255px;overflow:hidden;white-space:nowrap;background:rgba(10,8,30,.55);border:1px solid var(--glass-border);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-radius:10px;padding:5px 12px;font-size:11.5px;color:var(--text-light);text-align:center;letter-spacing:.3px;line-height:1.5}
+.cp-lrc{max-width:214px;overflow:hidden;white-space:nowrap;background:var(--glass);border:1px solid var(--glass-border);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border-radius:12px;padding:6px 13px;font-size:11px;color:var(--text-light);text-align:center;letter-spacing:.3px;line-height:1.55;box-shadow:var(--shadow)}
 .cp-lrc-in{display:inline-block;vertical-align:middle}
 .cp-lrc.mq .cp-lrc-in{animation:cpLrcMarquee 8s linear infinite}
 @keyframes cpLrcMarquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
@@ -352,6 +414,248 @@ body.frame-open{overflow:hidden}
 .live-island.show{opacity:1;transform:translateX(-50%) translateY(0);}
 .live-island .li-dot{width:8px;height:8px;border-radius:50%;background:#10b981;box-shadow:0 0 10px rgba(16,185,129,.8);animation:pulse 2.2s infinite;flex-shrink:0;}
 .live-island .li-dot.paused{background:#9aa0b5;box-shadow:none;animation:none;}
+
+
+/* ===== 留言板 · 评论区 ===== */
+#guestbook{scroll-margin-top:76px}
+.gb-card{max-width:760px;margin:0 auto;background:var(--card);border:1px solid var(--line);border-radius:26px;padding:24px 28px 16px;box-shadow:var(--shadow)}
+.gb-pub{display:flex;gap:12px;align-items:flex-start;padding-bottom:14px;border-bottom:1px solid var(--line)}
+.gb-me{flex:0 0 40px;width:40px;height:40px;border-radius:50%;background:var(--grad);color:#fff;font-size:16px;font-weight:800;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 18px rgba(124,140,240,.28)}
+.gb-pubmain{flex:1;min-width:0;display:flex;flex-direction:column}
+.gb-area{width:100%;box-sizing:border-box;min-height:58px;max-height:140px;resize:none;border:none;border-bottom:1px solid var(--line);background:transparent;padding:5px 2px 10px;font-size:13.5px;line-height:1.8;color:var(--text);font-family:inherit;outline:none;transition:border-color .2s}
+.gb-area:focus{border-bottom-color:var(--primary)}
+.gb-pubfoot{display:flex;align-items:center;gap:10px;margin-top:10px;flex-wrap:wrap}
+.gb-nick{flex:0 0 168px;height:34px;border-radius:10px;border:1px solid var(--line);background:var(--bg);padding:0 11px;font-size:12.5px;color:var(--text);font-family:inherit;outline:none;transition:.2s}
+.gb-nick:focus{border-color:var(--primary)}
+.gb-count{font-size:11px;color:var(--text-light)}
+.gb-send{margin-left:auto;border:none;cursor:pointer;padding:8px 20px;border-radius:999px;background:var(--grad);color:#fff;font-size:12.5px;font-weight:700;letter-spacing:.04em;box-shadow:0 8px 20px rgba(124,140,240,.3);transition:.22s}
+.gb-send:hover{transform:translateY(-1px)}
+.gb-send:active{transform:scale(.97)}
+.gb-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:14px}
+.gb-total{font-size:12px;color:var(--text-light)}
+.gb-total b{color:var(--text);font-weight:700}
+.gb-sort{display:flex;gap:2px}
+.gb-sort button{border:none;background:none;cursor:pointer;font-size:12px;color:var(--text-light);padding:4px 9px;border-radius:8px;transition:.2s}
+.gb-sort button.on{color:var(--primary);background:var(--primary-soft);font-weight:700}
+.gb-list{margin-top:4px;max-height:400px;overflow-y:auto;padding-right:6px;scrollbar-width:thin;scrollbar-color:rgba(128,128,128,.22) transparent}
+.gb-list::-webkit-scrollbar{width:4px}
+.gb-list::-webkit-scrollbar-thumb{background:rgba(128,128,128,.22);border-radius:99px}
+.gb-item{display:flex;gap:11px;padding:14px 2px;border-top:1px solid var(--line)}
+.gb-item:first-child{border-top:none}
+.gb-ava{flex:0 0 36px;width:36px;height:36px;border-radius:50%;display:flex;align-items:center;justify-content:center;color:#fff;font-size:14px;font-weight:800;background:var(--grad);letter-spacing:.5px}
+.gb-ava.sm{flex:0 0 26px;width:26px;height:26px;font-size:11px}
+.gb-main{flex:1;min-width:0}
+.gb-meta{display:flex;align-items:center;gap:7px;flex-wrap:wrap}
+.gb-name{font-size:12.5px;font-weight:700;color:var(--text-light)}
+.gb-badge{font-size:10px;color:var(--primary);background:var(--primary-soft);border-radius:6px;padding:1px 5px;font-weight:700}
+.gb-time{font-size:11px;color:#a9b0c4}
+.gb-txt{font-size:13.5px;line-height:1.85;color:var(--text);margin-top:4px;word-break:break-word;white-space:pre-wrap}
+.gb-acts{display:flex;align-items:center;gap:18px;margin-top:8px}
+.gb-act{border:none;background:none;cursor:pointer;display:inline-flex;align-items:center;gap:5px;font-size:11.5px;color:var(--text-light);padding:2px 0;transition:.2s}
+.gb-act:hover{color:var(--primary)}
+.gb-act svg{width:14px;height:14px}
+.gb-act.on{color:var(--primary)}
+.gb-reps{margin-top:9px;padding-left:12px;border-left:2px solid var(--line)}
+.gb-rep{display:flex;gap:9px;padding:6px 0}
+.gb-rep-main{flex:1;min-width:0}
+.gb-rep-head{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.gb-rep-txt{font-size:12.5px;line-height:1.8;color:var(--text-light);margin-top:2px;word-break:break-word;white-space:pre-wrap}
+.gb-rep-txt b{color:var(--primary);font-weight:600}
+.gb-rform{display:flex;gap:8px;margin-top:10px;padding-left:2px}
+.gb-rform input{flex:1;min-width:0;height:34px;border-radius:10px;border:1px solid var(--line);background:var(--bg);padding:0 12px;font-size:12.5px;color:var(--text);font-family:inherit;outline:none;transition:.2s}
+.gb-rform input:focus{border-color:var(--primary)}
+.gb-rform button{border:none;cursor:pointer;padding:0 15px;height:34px;border-radius:10px;background:var(--grad);color:#fff;font-size:12px;font-weight:700}
+.gb-empty{text-align:center;padding:26px 0 10px;font-size:12.5px;color:var(--text-light)}
+.gb-clear{margin-top:8px;text-align:right}
+.gb-clear button{border:none;background:none;cursor:pointer;font-size:11.5px;color:var(--text-light);text-decoration:underline;text-underline-offset:3px;padding:4px}
+.gb-clear button:hover{color:var(--primary)}
+
+/* —— AI 母带概念工程 —— */
+.lab-tools{position:relative;z-index:3;max-width:1000px;margin:28px auto 0}
+.lab-tools-head{text-align:center;margin-bottom:18px}
+.lab-tools-eyebrow{font-size:10px;letter-spacing:.3em;color:#8ccbe6}
+.lab-tools-tip{font-size:12px;color:#7f99ad;margin:9px 0 0;line-height:1.9}
+.lab-tools-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.lab-tool{display:flex;align-items:center;gap:12px;text-align:left;cursor:pointer;
+  border:1px solid rgba(150,215,240,.18);border-radius:16px;padding:15px 16px;
+  background:linear-gradient(160deg,rgba(120,180,220,.10),rgba(80,120,170,.05));
+  -webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px);
+  color:#cfe4f2;transition:transform .25s,border-color .25s,box-shadow .25s}
+.lab-tool:hover{border-color:rgba(150,225,255,.45);transform:translateY(-2px);
+  box-shadow:0 14px 34px -18px rgba(120,200,240,.7)}
+.lab-tool:active{transform:scale(.98)}
+.lab-tool-ico{flex:0 0 34px;width:34px;height:34px;border-radius:11px;display:flex;
+  align-items:center;justify-content:center;color:#9fdcf5;
+  background:rgba(140,205,235,.12);border:1px solid rgba(150,220,250,.2)}
+.lab-tool-ico svg{width:17px;height:17px}
+.lab-tool-main{flex:1;min-width:0;display:flex;flex-direction:column;gap:3px}
+.lab-tool-name{font-size:13px;font-weight:700;color:#e6f4fc}
+.lab-tool-tag{font-size:10px;color:#7fb4cf;display:inline-flex;align-items:center;gap:5px}
+.lab-tool-tag:before{content:"";width:5px;height:5px;border-radius:50%;background:#8ccbe6;opacity:.7}
+@media(max-width:980px){.lab-tools-grid{grid-template-columns:repeat(2,1fr);gap:12px}}
+@media(max-width:560px){.lab-tools-grid{grid-template-columns:1fr;gap:11px}.lab-tool{padding:13px 14px}}
+
+/* ===== 玻璃声场 · 概念虚拟实验工作室（专属艺术概念版） ===== */
+.lab-sec{position:relative;overflow:hidden;padding:104px 5% 92px;color:#e7f2f9;scroll-margin-top:72px;
+  background:radial-gradient(122% 82% at 50% -8%,#12222d 0%,#0c1821 40%,#07111a 72%,#050c12 100%);
+  border-top:1px solid rgba(150,205,230,.12);border-bottom:1px solid rgba(150,205,230,.08)}
+.lab-veil{position:absolute;inset:0;pointer-events:none;
+  background:
+    radial-gradient(56% 40% at 50% 54%,rgba(160,200,225,.15),rgba(160,200,225,0) 72%),
+    linear-gradient(180deg,rgba(0,0,0,0) 30%,rgba(150,190,215,.05) 50%,rgba(120,165,190,.04) 60%,rgba(0,0,0,0) 74%)}
+.lab-veil.b{background:
+    radial-gradient(38% 26% at 18% 72%,rgba(190,222,242,.08),rgba(190,222,242,0) 70%),
+    radial-gradient(34% 22% at 84% 32%,rgba(184,216,240,.09),rgba(184,216,240,0) 72%);opacity:.85}
+.lab-snow{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:1}
+.lab-goose{position:absolute;z-index:1;opacity:.16;filter:blur(.5px);pointer-events:none}
+.lab-goose.g1{top:13%;left:-10%;width:116px;animation:labGoose 64s linear infinite}
+.lab-goose.g2{top:22%;left:-14%;width:78px;opacity:.11;animation:labGoose 88s linear infinite;animation-delay:-24s}
+.lab-goose.g3{top:7%;left:-8%;width:56px;opacity:.09;animation:labGoose 102s linear infinite;animation-delay:-52s}
+@keyframes labGoose{0%{transform:translate3d(0,0,0)}100%{transform:translate3d(125vw,-26px,0)}}
+
+.lab-head{position:relative;z-index:3;text-align:center;max-width:770px;margin:0 auto}
+.lab-eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:10.5px;letter-spacing:.3em;color:#8ccbe6;font-weight:600}
+.lab-eyebrow-line{width:26px;height:1px;background:linear-gradient(90deg,rgba(140,203,230,0),#8fdcf5)}
+.lab-title{font-size:35px;line-height:1.36;font-weight:800;color:#f2faff;margin:18px 0 14px;letter-spacing:.01em}
+.lab-title em{font-style:normal;background:linear-gradient(100deg,#b6efff,#c9d4ff 55%,#eee3ff);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;color:transparent}
+.lab-sub{font-size:14px;color:#8ba4b6;line-height:2;margin:0}
+
+/* —— 悬浮玻璃腔体 —— */
+.lab-stage{position:relative;z-index:3;height:528px;margin-top:18px}
+.lab-shell{position:absolute;left:50%;top:4px;transform:translateX(-50%);width:min(1000px,96%);height:452px;
+  border-radius:50%/43%;overflow:hidden;
+  background:
+    radial-gradient(66% 56% at 42% 34%,rgba(178,224,248,.05),rgba(120,170,205,.015) 52%,rgba(10,26,40,0) 78%),
+    linear-gradient(180deg,rgba(214,244,255,.05),rgba(140,185,215,0) 34%);
+  border:1px solid rgba(200,240,255,.28);
+  box-shadow:inset 0 1px 0 rgba(236,252,255,.55),inset 0 -1px 0 rgba(214,246,255,.20),inset 0 0 46px rgba(150,215,245,.07),0 0 70px -14px rgba(140,215,245,.22);
+  -webkit-mask-image:linear-gradient(90deg,rgba(0,0,0,0) 0%,#000 8%,#000 92%,rgba(0,0,0,0) 100%);
+  mask-image:linear-gradient(90deg,rgba(0,0,0,0) 0%,#000 8%,#000 92%,rgba(0,0,0,0) 100%);
+  transition:box-shadow 1.2s ease,background 1.2s ease}
+.lab-shell:before{content:"";position:absolute;inset:0;border-radius:inherit;pointer-events:none;z-index:2;
+  box-shadow:inset 0 2px 0 rgba(230,250,255,.55),inset 0 -2px 0 rgba(214,244,255,.26),inset 0 0 0 1px rgba(196,240,255,.10)}
+.lab-shell:after{content:"";position:absolute;left:-2%;top:-16%;width:108%;height:62%;border-radius:50%;pointer-events:none;z-index:2;
+  background:
+    radial-gradient(46% 30% at 24% 58%,rgba(255,255,255,.42),rgba(255,255,255,0) 68%),
+    radial-gradient(34% 22% at 74% 72%,rgba(226,248,255,.20),rgba(226,248,255,0) 70%);
+  filter:blur(20px);mix-blend-mode:screen;opacity:.5}
+.lab-shell.on{box-shadow:inset 0 0 110px rgba(150,225,255,.20),0 40px 110px -58px rgba(130,215,245,.8)}
+.lab-frost{position:absolute;inset:11% 13%;border-radius:50%;pointer-events:none;
+  background:radial-gradient(52% 44% at 36% 24%,rgba(226,245,255,.06),rgba(190,224,242,.025) 46%,rgba(120,170,200,0) 74%);
+  filter:blur(14px);opacity:.55}
+.lab-reflect{position:absolute;left:8%;top:-22%;width:44%;height:110%;pointer-events:none;
+  border-radius:50%;transform:rotate(-18deg);
+  background:linear-gradient(180deg,rgba(240,252,255,.16),rgba(240,252,255,.02) 52%,rgba(240,252,255,0));
+  filter:blur(11px);opacity:.85}
+.lab-reflect.b{left:auto;right:2%;top:38%;width:34%;height:80%;transform:rotate(22deg);opacity:.4}
+.lab-line{position:absolute;pointer-events:none;border:1px solid rgba(200,240,255,.09);border-radius:50%}
+.lab-line.a{inset:6% 4% 30% 4%;border-bottom-color:rgba(0,0,0,0);border-left-color:rgba(0,0,0,0)}
+.lab-line.b{inset:34% 7% 8% 7%;border-top-color:rgba(0,0,0,0);border-right-color:rgba(0,0,0,0)}
+.lab-caption{position:absolute;left:50%;top:7.5%;transform:translateX(-50%);font-size:9.5px;letter-spacing:.26em;
+  color:rgba(178,225,246,.55);white-space:nowrap;pointer-events:none}
+.lab-caption.on{color:rgba(200,240,255,.85)}
+
+/* —— 声纹光带 —— */
+.lab-ribbons{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;opacity:.55;transition:opacity 1s ease}
+.lab-shell.on .lab-ribbons{opacity:.95}
+.lab-ribbons path{stroke-linecap:round}
+.lab-rib1{animation:labDash 34s linear infinite}
+.lab-rib2{animation:labDash 46s linear infinite reverse}
+.lab-rib3{animation:labDash 27s linear infinite}
+.lab-rib4{animation:labDash 38s linear infinite reverse}
+.lab-shell.on .lab-rib1{animation-duration:15s}
+.lab-shell.on .lab-rib2{animation-duration:19s}
+.lab-shell.on .lab-rib3{animation-duration:12s}
+.lab-shell.on .lab-rib4{animation-duration:16s}
+@keyframes labDash{0%{stroke-dashoffset:0}100%{stroke-dashoffset:-1400}}
+
+/* —— 中央收音光点 —— */
+.lab-anchor{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);width:2px;height:42%;pointer-events:none;
+  background:linear-gradient(180deg,rgba(216,246,255,0),rgba(216,246,255,.42) 18%,rgba(216,246,255,.10) 56%,rgba(216,246,255,0))}
+.lab-orb{position:absolute;left:50%;top:50%;width:15px;height:15px;margin:-7.5px 0 0 -7.5px;border-radius:50%;
+  background:radial-gradient(circle,#fff,rgba(176,232,255,.42) 46%,rgba(176,232,255,0) 72%);
+  box-shadow:0 0 34px rgba(168,232,255,.6);animation:labPulse 6.5s ease-in-out infinite}
+.lab-shell.on .lab-orb{animation-duration:2.8s;box-shadow:0 0 46px rgba(184,240,255,.8)}
+.lab-ripple{position:absolute;left:50%;top:50%;width:72px;height:72px;margin:-36px 0 0 -36px;border-radius:50%;
+  border:1px solid rgba(184,238,255,.22);animation:labRipple 8s ease-out infinite;pointer-events:none}
+.lab-ripple.r2{animation-delay:2.7s;border-color:rgba(184,238,255,.16)}
+.lab-ripple.r3{animation-delay:5.4s;border-color:rgba(184,238,255,.12)}
+@keyframes labRipple{0%{transform:scale(.6);opacity:.55}70%{opacity:.12}100%{transform:scale(2.6);opacity:0}}
+@keyframes labPulse{0%,100%{transform:scale(1);opacity:.85}50%{transform:scale(1.22);opacity:1}}
+
+/* —— 空中光控 —— */
+.lab-holo{position:absolute;left:50%;bottom:4px;transform:translateX(-50%);width:min(940px,98%);
+  display:flex;align-items:center;gap:16px;padding:11px 14px 11px 20px;border-radius:999px;
+  background:linear-gradient(120deg,rgba(196,232,250,.10),rgba(122,172,206,.05));
+  border:1px solid rgba(178,224,245,.20);
+  -webkit-backdrop-filter:blur(16px) saturate(120%);backdrop-filter:blur(16px) saturate(120%);
+  box-shadow:0 24px 60px -36px rgba(0,0,0,.8),inset 0 1px 0 rgba(255,255,255,.16)}
+.lab-hinfo{display:flex;align-items:baseline;gap:8px;flex-shrink:0;min-width:132px}
+.lab-k{font-size:9.5px;letter-spacing:.22em;color:#7d9bb0}
+.lab-scene{font-size:14px;font-weight:700;color:#e9f7ff;letter-spacing:.04em}
+.lab-state{font-size:9.5px;letter-spacing:.12em;color:#87a3b6;padding-left:2px}
+.lab-state.on{color:#8fe6ff}
+.lab-chips{display:flex;align-items:center;gap:2px;flex:1;justify-content:center;flex-wrap:wrap}
+.lab-chip{background:none;border:0;padding:7px 11px;border-radius:999px;cursor:pointer;color:#8ea8bb;
+  font-size:12px;letter-spacing:.06em;transition:.25s;white-space:nowrap}
+.lab-chip:hover{color:#d7effb}
+.lab-chip.act{color:#f0fbff;background:rgba(150,225,255,.10);box-shadow:inset 0 0 0 1px rgba(170,232,255,.28)}
+.lab-start{display:inline-flex;align-items:center;gap:8px;flex-shrink:0;cursor:pointer;border-radius:999px;
+  padding:9px 16px 9px 12px;border:1px solid rgba(165,228,255,.45);color:#f0fbff;
+  font-size:12.5px;font-weight:700;letter-spacing:.1em;
+  background:linear-gradient(135deg,rgba(120,225,255,.24),rgba(168,170,255,.18));
+  box-shadow:0 10px 26px -14px rgba(110,220,255,.7),inset 0 1px 0 rgba(255,255,255,.3);transition:.25s}
+.lab-start:hover{transform:translateY(-1px)}
+.lab-start.on{background:linear-gradient(135deg,rgba(180,240,255,.30),rgba(150,200,255,.22));border-color:rgba(200,245,255,.7)}
+.lab-start svg{width:13px;height:13px;fill:none;stroke:#eafcff;stroke-width:1.8;stroke-linecap:round}
+
+/* —— 场景说明与留白 —— */
+.lab-note{position:relative;z-index:3;text-align:center;margin:14px auto 0;max-width:640px;min-height:46px}
+.lab-desc{font-size:13px;color:#94adbf;line-height:2;margin:0;transition:opacity .4s ease}
+.lab-facts{position:relative;z-index:3;display:flex;justify-content:center;align-items:center;gap:0;flex-wrap:wrap;
+  margin:26px auto 0;max-width:900px}
+.lab-fact{padding:0 22px;text-align:center;position:relative}
+.lab-fact b{display:block;font-size:12px;color:#dceffb;font-weight:600;letter-spacing:.14em}
+.lab-fact span{display:block;font-size:10.5px;color:#7d97aa;margin-top:5px;letter-spacing:.04em}
+.lab-fact+.lab-fact:before{content:"";position:absolute;left:0;top:4px;bottom:2px;width:1px;background:linear-gradient(180deg,rgba(160,210,235,0),rgba(160,210,235,.22),rgba(160,210,235,0))}
+.lab-quote{position:relative;z-index:3;text-align:center;margin:34px auto 0;font-size:11.5px;letter-spacing:.22em;color:#6f8899}
+.lab-fade{opacity:0;transform:translateY(20px);transition:opacity .9s ease,transform .9s ease}
+.lab-fade.on{opacity:1;transform:none}
+
+@media(max-width:980px){
+  .lab-sec{padding:80px 5% 76px}
+  .lab-stage{height:484px}
+  .lab-shell{height:376px;width:100%}
+  .lab-holo{width:96%;padding:9px 12px 10px;gap:6px 10px;flex-wrap:wrap;justify-content:space-between;border-radius:18px;bottom:0}
+  .lab-hinfo{min-width:0;flex:1}
+  .lab-chips{order:3;flex:0 0 100%;justify-content:space-between;gap:4px;border-top:1px solid rgba(160,210,235,.14);padding-top:7px;margin-top:2px}
+  .lab-chip{flex:1;text-align:center}
+  .lab-start{order:2}
+  .lab-facts{gap:8px 0;margin-top:20px}
+  .lab-fact{padding:8px 14px}
+  .lab-title{font-size:29px}
+}
+@media(max-width:560px){
+  .lab-sec{padding:66px 5% 64px}
+  .lab-stage{height:407px}
+  .lab-shell{height:300px;width:100%;border-radius:50%/42%}
+  .lab-holo{width:95%;bottom:0;border-radius:16px;padding:8px 11px 9px;gap:6px 8px}
+  .lab-k{display:none}
+  .lab-scene{font-size:12.5px}
+  .lab-state{font-size:9px;letter-spacing:.06em}
+  .lab-chip{font-size:11px;padding:6px 4px}
+  .lab-start{font-size:11px;padding:7px 11px 7px 9px;gap:5px}
+  .lab-title{font-size:25px;line-height:1.4}
+  .lab-sub{font-size:13px}
+  .lab-desc{font-size:12.5px}
+  .lab-fact{padding:7px 12px;flex:1 1 44%}
+  .lab-fact+.lab-fact:before{display:none}
+  .lab-fact b{font-size:11px;letter-spacing:.1em}
+  .lab-fact span{font-size:9.5px}
+  .lab-quote{font-size:10px;letter-spacing:.16em;margin-top:26px}
+  .lab-goose{display:none}
+}
+
 </style>
 </head>
 <body>
@@ -373,7 +677,10 @@ body.frame-open{overflow:hidden}
       <li><a href="#home">首页</a></li>
       <li><a href="#about">关于</a></li>
       <li><a href="#music">音乐作品</a></li>
+      <li><a href="#studio">录音室</a></li>
+      <li><a href="#ai">MiNa AI</a></li>
       <li><a href="#project">开发项目</a></li>
+      <li><a href="#guestbook">留言板</a></li>
       <li><a href="#contact">联系</a></li>
       <li><button id="appearBtn" onclick="openAppear()"><svg class="icon-line" viewBox="0 0 24 24"><path d="M12 22a10 10 0 1 1 10-10c0 1.16-.84 2-2 2h-2.5a2.5 2.5 0 0 0-1.79 4.21c.31.31.5.73.5 1.19 0 1.1-.9 2-2 2z"/><circle cx="6.5" cy="6.5" r="1.5"/><circle cx="17.5" cy="6.5" r="1.5"/><circle cx="6.5" cy="17.5" r="1.5"/></svg><span>外观</span></button></li>
       <li><button id="themeBtn" onclick="toggleTheme()"><svg class="icon-line" id="thIcon" viewBox="0 0 24 24"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg><span id="themeLabel">暗色</span></button></li>
@@ -514,6 +821,269 @@ body.frame-open{overflow:hidden}
   </div>
 </div>
 
+
+
+<!-- ===== 玻璃声场 · 概念虚拟实验工作室 ===== -->
+<section class="lab-sec" id="studio">
+  <div class="lab-veil"></div>
+  <div class="lab-veil b"></div>
+  <canvas class="lab-snow" id="labSnow"></canvas>
+  <svg class="lab-goose g1" viewBox="0 0 60 20" aria-hidden="true"><path d="M2 13 C10 4 18 4 26 11 C30 7 34 7 38 11 C46 4 54 4 58 13" stroke="rgba(214,238,252,.55)" stroke-width="1.3" fill="none" stroke-linecap="round"/></svg>
+  <svg class="lab-goose g2" viewBox="0 0 60 20" aria-hidden="true"><path d="M2 13 C10 4 18 4 26 11 C30 7 34 7 38 11 C46 4 54 4 58 13" stroke="rgba(214,238,252,.5)" stroke-width="1.5" fill="none" stroke-linecap="round"/></svg>
+  <svg class="lab-goose g3" viewBox="0 0 60 20" aria-hidden="true"><path d="M2 13 C10 4 18 4 26 11 C30 7 34 7 38 11 C46 4 54 4 58 13" stroke="rgba(214,238,252,.45)" stroke-width="1.7" fill="none" stroke-linecap="round"/></svg>
+
+  <div class="lab-head lab-fade">
+    <div class="lab-eyebrow"><span class="lab-eyebrow-line"></span>GLASS SOUND FIELD · 悬浮声场实验</div>
+    <h2 class="lab-title">悬在长夜风雪之间的<em>透明声场</em></h2>
+    <p class="lab-sub">没有墙，没有门，也没有调音台。只有一座悬空的弧形玻璃腔体，和不肯熄灭的那一点声音。</p>
+  </div>
+
+  <div class="lab-stage lab-fade">
+    <div class="lab-shell" id="labShell">
+      <div class="lab-frost"></div>
+      <div class="lab-reflect"></div>
+      <div class="lab-reflect b"></div>
+      <div class="lab-line a"></div>
+      <div class="lab-line b"></div>
+      <div class="lab-caption" id="labCaption">声纹 · 静默悬浮</div>
+
+      <svg class="lab-ribbons" viewBox="0 0 1000 520" preserveAspectRatio="none" aria-hidden="true">
+        <defs>
+          <linearGradient id="labG1" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0" stop-color="rgba(165,225,255,0)"/>
+            <stop offset="38%" stop-color="rgba(152,224,255,.82)"/>
+            <stop offset="72%" stop-color="rgba(176,210,255,.5)"/>
+            <stop offset="100%" stop-color="rgba(165,225,255,0)"/>
+          </linearGradient>
+        </defs>
+                <g stroke="url(#labG1)" fill="none" filter="blur(1.8px)">
+          <path class="lab-rib1" d="M180 306 C286 196 452 168 590 214 C700 252 782 296 754 344" stroke-dasharray="780 180" stroke-width="3.2"/>
+          <path class="lab-rib2" d="M268 372 C352 300 486 282 622 312 C704 330 754 350 736 372" stroke-dasharray="620 170" stroke-width="2.2"/>
+          <path class="lab-rib3" d="M392 208 C498 178 634 190 726 240 C788 274 806 300 790 322" stroke-dasharray="600 160" stroke-width="2.8"/>
+          <path class="lab-rib4" d="M232 262 C330 226 420 236 496 276 C568 314 626 336 706 322" stroke-dasharray="520 150" stroke-width="1.8"/>
+        </g>
+        <g stroke="url(#labG1)" fill="none" filter="blur(16px)" opacity=".42">
+          <path class="lab-rib1" d="M180 306 C286 196 452 168 590 214 C700 252 782 296 754 344" stroke-dasharray="780 180" stroke-width="14"/>
+          <path class="lab-rib3" d="M392 208 C498 178 634 190 726 240 C788 274 806 300 790 322" stroke-dasharray="600 160" stroke-width="13"/>
+        </g>
+      </svg>
+
+      <div class="lab-anchor"><span class="lab-orb"></span></div>
+      <span class="lab-ripple r1"></span><span class="lab-ripple r2"></span><span class="lab-ripple r3"></span>
+    </div>
+
+    <div class="lab-holo">
+      <div class="lab-hinfo">
+        <span class="lab-k">声场</span>
+        <span class="lab-scene" id="labScene">风雪旷野</span>
+        <span class="lab-state" id="labState">未启动</span>
+      </div>
+      <div class="lab-chips" id="labChips">
+        <button class="lab-chip act" type="button" data-scene="wild">旷野</button>
+        <button class="lab-chip" type="button" data-scene="shore">长岸</button>
+        <button class="lab-chip" type="button" data-scene="mountain">寒山</button>
+        <button class="lab-chip" type="button" data-scene="void">空场</button>
+      </div>
+      <button class="lab-start" type="button" id="labStart">
+        <svg viewBox="0 0 24 24"><path d="M7 5l12 7-12 7z"/></svg><span id="labStartTxt">启动声场</span>
+      </button>
+    </div>
+  </div>
+
+  <div class="lab-note lab-fade">
+    <p class="lab-desc" id="labDesc">风从很远的地方来，人声被托起又落下，雪原没有尽头。</p>
+  </div>
+
+  <div class="lab-facts lab-fade">
+    <div class="lab-fact"><b>声场重构</b><span>风雪旷野 / 长夜空岸 / 寒山孤境</span></div>
+    <div class="lab-fact"><b>声纹凝结</b><span>淡蓝光带在玻璃内缓缓流转</span></div>
+    <div class="lab-fact"><b>空中光控</b><span>没有设备，只有光</span></div>
+    <div class="lab-fact"><b>意境孵化</b><span>风雪 · 寒雁 · 孤灯 · 长夜</span></div>
+  </div>
+
+  <div class="lab-tools lab-fade">
+    <div class="lab-tools-head">
+      <span class="lab-tools-eyebrow">AI MASTERING · 概念工程</span>
+      <p class="lab-tools-tip">声场里规划中的音频工程，点一下会告诉你它现在的状态。</p>
+    </div>
+    <div class="lab-tools-grid">
+      <button type="button" class="lab-tool" data-name="AI 母带">
+        <span class="lab-tool-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 4.7L18.5 9.5l-4.7 1.8L12 16l-1.8-4.7L5.5 9.5l4.7-1.8z"/><path d="M18.5 14.5l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8z"/></svg></span>
+        <span class="lab-tool-main"><b class="lab-tool-name">AI 母带</b><span class="lab-tool-tag">待开发</span></span>
+      </button>
+      <button type="button" class="lab-tool" data-name="AI / 原创分轨">
+        <span class="lab-tool-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l9 5-9 5-9-5z"/><path d="M3 12l9 5 9-5"/><path d="M3 16l9 5 9-5"/></svg></span>
+        <span class="lab-tool-main"><b class="lab-tool-name">AI / 原创分轨</b><span class="lab-tool-tag">待开发</span></span>
+      </button>
+      <button type="button" class="lab-tool" data-name="音质提升">
+        <span class="lab-tool-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 17l5-5 3 3 8-8"/><path d="M15 7h5v5"/></svg></span>
+        <span class="lab-tool-main"><b class="lab-tool-name">音质提升</b><span class="lab-tool-tag">待开发</span></span>
+      </button>
+      <button type="button" class="lab-tool" data-name="音频转 MIDI">
+        <span class="lab-tool-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18V6l10-2v12"/><circle cx="6" cy="18" r="3"/><circle cx="16" cy="16" r="3"/></svg></span>
+        <span class="lab-tool-main"><b class="lab-tool-name">音频转 MIDI</b><span class="lab-tool-tag">待开发</span></span>
+      </button>
+      <button type="button" class="lab-tool" data-name="音轨合成">
+        <span class="lab-tool-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h6a4 4 0 014 4v10"/><path d="M20 5h-6a4 4 0 00-4 4"/><path d="M11 19l-3-3 3-3"/></svg></span>
+        <span class="lab-tool-main"><b class="lab-tool-name">音轨合成</b><span class="lab-tool-tag">待开发</span></span>
+      </button>
+      <button type="button" class="lab-tool" data-name="MIDI 转音谱">
+        <span class="lab-tool-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7h18M3 12h18M3 17h18"/><path d="M9 4v16"/><circle cx="14" cy="12" r="2.2"/></svg></span>
+        <span class="lab-tool-main"><b class="lab-tool-name">MIDI 转音谱</b><span class="lab-tool-tag">待开发</span></span>
+      </button>
+      <button type="button" class="lab-tool" data-name="AI 扒谱 / 多乐器转谱">
+        <span class="lab-tool-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h3l2-7 4 14 3-10 2 5 2-2h4"/></svg></span>
+        <span class="lab-tool-main"><b class="lab-tool-name">AI 扒谱 / 多乐器转谱</b><span class="lab-tool-tag">待开发</span></span>
+      </button>
+      <button type="button" class="lab-tool" data-name="AI 降噪">
+        <span class="lab-tool-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h2l2-5 3 10 3-8 2 3h4"/><path d="M4 4l16 16"/></svg></span>
+        <span class="lab-tool-main"><b class="lab-tool-name">AI 降噪</b><span class="lab-tool-tag">待开发</span></span>
+      </button>
+      <button type="button" class="lab-tool" data-name="人声修复 / 人声增强">
+        <span class="lab-tool-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0 0 14 0"/><path d="M12 18v3"/><path d="M17 6l2-2 2 2"/></svg></span>
+        <span class="lab-tool-main"><b class="lab-tool-name">人声修复 / 人声增强</b><span class="lab-tool-tag">待开发</span></span>
+      </button>
+      <button type="button" class="lab-tool" data-name="音色克隆 / 声音克隆">
+        <span class="lab-tool-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="9" r="3.2"/><path d="M4 19c.5-3.2 2.6-5 5-5s4.5 1.8 5 5"/><path d="M16 6.2a3 3 0 0 1 0 5.6"/><path d="M17 14c2 .5 3.3 2.2 3.6 5"/></svg></span>
+        <span class="lab-tool-main"><b class="lab-tool-name">音色克隆 / 声音克隆</b><span class="lab-tool-tag">待开发</span></span>
+      </button>
+      <button type="button" class="lab-tool" data-name="AI 翻唱 / 声音转换">
+        <span class="lab-tool-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M7 8h10l-3-3"/><path d="M17 16H7l3 3"/></svg></span>
+        <span class="lab-tool-main"><b class="lab-tool-name">AI 翻唱 / 声音转换</b><span class="lab-tool-tag">待开发</span></span>
+      </button>
+      <button type="button" class="lab-tool" data-name="AI 自动混音">
+        <span class="lab-tool-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h10M18 7h2M4 17h2M10 17h10"/><circle cx="16" cy="7" r="2"/><circle cx="8" cy="17" r="2"/><path d="M12 4v6M6 14v6"/></svg></span>
+        <span class="lab-tool-main"><b class="lab-tool-name">AI 自动混音</b><span class="lab-tool-tag">待开发</span></span>
+      </button>
+      <button type="button" class="lab-tool" data-name="音乐视频 / MV 生成">
+        <span class="lab-tool-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="M16 10l5-3v10l-5-3"/><path d="M7 3v3M12 3v3M7 18v3M12 18v3"/></svg></span>
+        <span class="lab-tool-main"><b class="lab-tool-name">音乐视频 / MV 生成</b><span class="lab-tool-tag">待开发</span></span>
+      </button>
+      <button type="button" class="lab-tool" data-name="音频格式转换">
+        <span class="lab-tool-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 10a8 8 0 0 1 13-3l3 3"/><path d="M20 4v6h-6"/><path d="M20 14a8 8 0 0 1-13 3l-3-3"/><path d="M4 20v-6h6"/></svg></span>
+        <span class="lab-tool-main"><b class="lab-tool-name">音频格式转换</b><span class="lab-tool-tag">待开发</span></span>
+      </button>
+    </div>
+  </div>
+
+  <div class="lab-quote lab-fade">以玻璃为躯，以声纹为魂 · 以虚空为境，以坚守为内核</div>
+</section>
+
+
+<div class="container" id="ai" style="padding-top:0">
+  <h2 class="section-title">MiNa AI · 概念级多模态引擎</h2>
+  <p class="section-sub">三个引擎、八项能力：从一句话到一张图、一段曲、一整个网页。</p>
+
+  <div class="ai-grid">
+    <div class="ai-engine reveal">
+      <span class="ai-ver">MiNa Q3</span>
+      <h3>极速对话</h3>
+      <p class="ai-desc">毫秒级响应，专为高频交互与实时反馈打造。</p>
+      <div class="ai-feats">
+        <div class="ai-feat"><svg class="icon-line" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>自然语言秒级反馈</div>
+        <div class="ai-feat"><svg class="icon-line" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>超强多轮记忆与偏好</div>
+        <div class="ai-feat"><svg class="icon-line" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>长文本摘要与翻译</div>
+      </div>
+      <div class="ai-status"><span>概念规划</span><span>轻量引擎</span></div>
+    </div>
+
+    <div class="ai-engine reveal">
+      <span class="ai-ver">MiNa Q4</span>
+      <h3>均衡多面手</h3>
+      <p class="ai-desc">性能与效果的最佳平衡，内容创作者的首选。</p>
+      <div class="ai-feats">
+        <div class="ai-feat"><svg class="icon-line" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>高精度文生图与排版</div>
+        <div class="ai-feat"><svg class="icon-line" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>深度知识问答与解析</div>
+        <div class="ai-feat"><svg class="icon-line" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>一键生成歌词与画作</div>
+      </div>
+      <div class="ai-status"><span>概念规划</span><span>创作主力</span></div>
+    </div>
+
+    <div class="ai-engine is-pro reveal">
+      <span class="ai-ver">MiNa Q4.5 Pro</span>
+      <h3>全能旗舰</h3>
+      <p class="ai-desc">解锁所有 AI 原生力量，极客与开发者的降维打击。</p>
+      <div class="ai-feats">
+        <div class="ai-feat"><svg class="icon-line" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>全栈代码生成与 Debug</div>
+        <div class="ai-feat"><svg class="icon-line" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>Agent 自主运行 Python</div>
+        <div class="ai-feat"><svg class="icon-line" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"/></svg>生成带交互动效的网页</div>
+      </div>
+      <div class="ai-status"><span>概念规划</span><span>旗舰引擎</span></div>
+    </div>
+  </div>
+
+  <div class="ai-cap-grid">
+    <div class="ai-cap reveal">
+      <div class="ico"><svg class="icon-line" viewBox="0 0 24 24"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div>
+      <h4>文本与文档</h4>
+      <p>文章、翻译、摘要、长文档解析</p>
+    </div>
+    <div class="ai-cap reveal">
+      <div class="ico"><svg class="icon-line" viewBox="0 0 24 24"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></div>
+      <h4>代码与数据</h4>
+      <p>全栈代码、Debug、运行 Python</p>
+    </div>
+    <div class="ai-cap reveal">
+      <div class="ico"><svg class="icon-line" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></div>
+      <h4>多模态生图</h4>
+      <p>看图识别、文生图、智能排版</p>
+    </div>
+    <div class="ai-cap reveal">
+      <div class="ico"><svg class="icon-line" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></div>
+      <h4>Agent 工具链</h4>
+      <p>自主执行任务、计算数学、画图</p>
+    </div>
+    <div class="ai-cap reveal">
+      <div class="ico"><svg class="icon-line" viewBox="0 0 24 24"><path d="M12 3v18"/><path d="M8 7H5a2 2 0 0 0-2 2v3"/><circle cx="12" cy="4" r="1.6"/><path d="M16 7h3a2 2 0 0 1 2 2v3"/><circle cx="19" cy="14" r="1.6"/><circle cx="5" cy="14" r="1.6"/><path d="M12 12v9"/></svg></div>
+      <h4>语音与听觉</h4>
+      <p>语音转写、朗读合成、音频理解</p>
+    </div>
+    <div class="ai-cap reveal">
+      <div class="ico"><svg class="icon-line" viewBox="0 0 24 24"><rect x="2" y="5" width="14" height="12" rx="2"/><path d="M16 10l6-3.5v11L16 14"/><path d="M6 3.5h6"/></svg></div>
+      <h4>视频与动效</h4>
+      <p>分镜生成、视频脚本、动效网页</p>
+    </div>
+    <div class="ai-cap reveal">
+      <div class="ico"><svg class="icon-line" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5"/><path d="M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg></div>
+      <h4>知识库与检索</h4>
+      <p>资料入库、语义检索、引用溯源</p>
+    </div>
+    <div class="ai-cap reveal">
+      <div class="ico"><svg class="icon-line" viewBox="0 0 24 24"><path d="M4 5h9M4 12h7M4 19h9"/><path d="M17 5v14"/><path d="M14 8l3-3 3 3"/><path d="M14 16l3 3 3-3"/></svg></div>
+      <h4>翻译与本地化</h4>
+      <p>多语互译、术语统一、风格适配</p>
+    </div>
+  </div>
+
+  <div class="ai-demo reveal">
+    <div class="ai-demo-top">
+      <div class="ico"><svg class="icon-line" viewBox="0 0 24 24"><path d="M13 2L3 14h8l-1 8 10-12h-8z"/></svg></div>
+      <h3>一句话，生成一整个玻璃录音棚</h3>
+    </div>
+    <p class="ai-demo-sub">只写一句「全透明玻璃质感虚拟录音棚」，Q4.5 Pro 直接吐出带视差动效、呼吸灯与场景切换的完整页面。上面那座声场，就是这么来的。</p>
+    <div class="ai-flow">
+      <div class="ai-prompt">
+        <div class="lbl">USER PROMPT</div>
+        <div class="txt">全透明玻璃质感虚拟录音棚，通透、清冷、有呼吸感，不要厚重的封闭录音室。</div>
+      </div>
+      <div class="ai-arrow"><svg class="icon-line" viewBox="0 0 24 24"><line x1="4" y1="12" x2="19" y2="12"/><polyline points="13 6 19 12 13 18"/></svg></div>
+      <div class="ai-term">
+        <div class="ai-term-bar"><i class="t1"></i><i class="t2"></i><i class="t3"></i><em>generated.html</em></div>
+        <div class="ai-term-body"><span class="c">&lt;!-- 由一句 Prompt 直出 --&gt;</span>
+<span class="k">const</span> studio = <span class="k">new</span> MiNa.Studio({
+  style: <span class="s">"glassmorphism"</span>,
+  lighting: <span class="s">"5800K_cold_light"</span>,
+  interaction: {
+    mouseParallax: <span class="k">true</span>,
+    breathingLight: <span class="s">"slow_idle_fast_recording"</span>
+  }
+});
+studio.<span class="k">render</span>(<span class="s">"#app"</span>);</div>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="container" id="project" style="padding-top:0">
   <h2 class="section-title">开发项目</h2>
   <p class="section-sub">自己用着顺手，就是最好的软件。</p>
@@ -545,6 +1115,32 @@ body.frame-open{overflow:hidden}
   </div>
 </div>
 
+<div class="container" id="guestbook" style="padding-top:0">
+  <h2 class="section-title">留言板</h2>
+  <p class="section-sub">风雪再大，也留一句话在这儿。</p>
+  <div class="gb-card reveal">
+    <div class="gb-pub">
+      <div class="gb-me" id="gbMe">匿</div>
+      <div class="gb-pubmain">
+        <textarea class="gb-area" id="gbText" maxlength="200" placeholder="说点什么，风雪里也有人听…"></textarea>
+        <div class="gb-pubfoot">
+          <input class="gb-nick" id="gbNick" maxlength="12" placeholder="署名（留空＝匿名旅人）">
+          <span class="gb-count" id="gbCount">0/200</span>
+          <button class="gb-send" id="gbSend" type="button">发布</button>
+        </div>
+      </div>
+    </div>
+    <div class="gb-head">
+      <span class="gb-total">共 <b id="gbTotal">0</b> 条留言</span>
+      <span class="gb-sort">
+        <button type="button" data-sort="new" class="on">最新</button><button type="button" data-sort="hot">回复最多</button>
+      </span>
+    </div>
+    <div class="gb-list" id="gbList"></div>
+    <div class="gb-clear"><button type="button" id="gbClear">清空本机留言</button></div>
+  </div>
+</div>
+
 <div class="container" id="contact" style="padding-top:0">
   <h2 class="section-title">联系我</h2>
   <p class="section-sub">音乐、代码、合作，都欢迎来找我聊聊。</p>
@@ -571,10 +1167,6 @@ body.frame-open{overflow:hidden}
       <div class="cp-cover"><svg class="icon-line" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"/></svg></div>
       <div class="cp-hi"><div class="cp-ht" id="cpTitle">Loina 电台 · 播放中</div><div class="cp-hs">Mango Player · 本地</div></div>
       <div class="cp-wave"><span></span><span></span><span></span></div>
-    </div>
-    <div class="cp-lyric" id="cpLyric" style="display:none">
-      <div class="cp-ly-line prev" id="cpLyPrev"></div>
-      <div class="cp-ly-line cur" id="cpLyCur"></div>
     </div>
     <div class="cp-list">
       <div class="cp-song playing" onclick="pickSong(0)"><span class="cs-idx">01</span><span>归零者</span></div>
@@ -909,19 +1501,7 @@ window.addEventListener('message', function(ev){
   var t = document.getElementById('cpTitle');
   var b = document.getElementById('cpPlayBtn');
   if(t) t.innerText = d.name ? ((d.isPlaying ? '正在播放：' : '已暂停：') + d.name) : 'Loina 电台 · 播放中';
-  /* 滚动歌词：Mango 导入歌词后，副标题区显示歌词滚动 */
-  var ly = document.getElementById('cpLyric');
-  if(ly){
-    var L = window._mangoLrc || [];
-    if(d.hasLrc && L.length && d.idx >= 0 && d.idx < L.length){
-      ly.style.display = 'flex';
-      var pv = document.getElementById('cpLyPrev'), cu = document.getElementById('cpLyCur');
-      if(pv) pv.textContent = d.idx > 0 ? (L[d.idx-1] || '') : '';
-      if(cu) cu.textContent = L[d.idx];
-    } else {
-      ly.style.display = 'none';
-    }
-  }
+  /* 主页不显示歌词：歌词只在 Mango Player 内部展示 */
   if(window._curApp === 'player') updateLiveIsland();
   var pill = document.getElementById('musicCapsule').querySelector('.capsule-pill');
   if(pill){
@@ -1124,5 +1704,353 @@ function jumpTo(page){
     </div>
   </div>
 </div>
+
+<script>
+(function(){
+  var sec = document.getElementById('studio');
+  if(!sec) return;
+  var shell = document.getElementById('labShell');
+  var caption = document.getElementById('labCaption');
+  var sceneEl = document.getElementById('labScene');
+  var stateEl = document.getElementById('labState');
+  var descEl = document.getElementById('labDesc');
+  var startBtn = document.getElementById('labStart');
+  var startTxt = document.getElementById('labStartTxt');
+  var chips = Array.prototype.slice.call(document.querySelectorAll('#labChips .lab-chip'));
+
+  var SCENES = {
+    wild:     {name:'风雪旷野', desc:'风从很远的地方来，人声被托起又落下，雪原没有尽头。', snow:150, speed:1.15},
+    shore:    {name:'长夜孤岸', desc:'浪声退到很远，只剩一盏灯、一条岸线，和等不到的回音。', snow:86,  speed:.75},
+    mountain: {name:'寒山静境', desc:'山影压得很低，回声要等很久才回来，像一句没说出口的话。', snow:112, speed:.95},
+    void:     {name:'数字空场', desc:'没有风，没有雪，只有声纹在玻璃里自己流转。', snow:34,  speed:.30}
+  };
+  var cur = 'wild', on = false;
+
+  /* —— 雪粒 —— */
+  var cv = document.getElementById('labSnow'), ctx = cv.getContext('2d');
+  var dpr = Math.min(window.devicePixelRatio || 1, 2);
+  var flakes = [], W = 0, H = 0, raf = null, visible = false, last = 0, intensity = 1;
+
+  function resize(){
+    var r = sec.getBoundingClientRect();
+    W = r.width; H = r.height;
+    cv.width = Math.round(W*dpr); cv.height = Math.round(H*dpr);
+    cv.style.width = W+'px'; cv.style.height = H+'px';
+    build();
+  }
+  function build(){
+    flakes = [];
+    var n = Math.round((SCENES[cur].snow || 120) * (on ? 1.25 : 1));
+    for(var i=0;i<n;i++){
+      flakes.push({x:Math.random()*W, y:Math.random()*H, r:(.4+Math.random()*1.3), vy:(.25+Math.random()*1.1), vx:-(.2+Math.random()*.9), a:(.16+Math.random()*.38), p:Math.random()*6.28});
+    }
+  }
+  function draw(t){
+    if(!visible || document.hidden){ raf=null; return; }
+    raf = requestAnimationFrame(draw);
+    var dt = Math.min(48, t-(last||t)); last = t;
+    ctx.clearRect(0,0,cv.width,cv.height);
+    var sp = (SCENES[cur].speed||1) * (on?1.5:1) * dt/16.6;
+    for(var i=0;i<flakes.length;i++){
+      var f = flakes[i];
+      f.y += f.vy*sp; f.x += f.vx*sp + Math.sin((t/2200)+f.p)*.35;
+      if(f.y > H+4){ f.y = -6; f.x = Math.random()*W; }
+      if(f.x < -6){ f.x = W+6; f.y = Math.random()*H; }
+      ctx.beginPath();
+      ctx.arc(f.x*dpr, f.y*dpr, f.r*dpr, 0, 6.283);
+      ctx.fillStyle = 'rgba(214,238,252,'+f.a+')';
+      ctx.fill();
+    }
+  }
+  function start(){ if(!raf){ last = 0; raf = requestAnimationFrame(draw); } }
+  function stop(){ if(raf){ cancelAnimationFrame(raf); raf = null; } }
+
+  /* —— 场景切换 —— */
+  function setScene(k){
+    cur = k;
+    if(SCENES[k]){
+      sceneEl.textContent = SCENES[k].name;
+      descEl.textContent = SCENES[k].desc;
+    }
+    chips.forEach(function(c){ c.classList.toggle('act', c.getAttribute('data-scene')===k); });
+    shell.setAttribute('data-scene', k);
+    build();
+  }
+
+  chips.forEach(function(c){
+    c.addEventListener('click', function(){ setScene(c.getAttribute('data-scene')); });
+  });
+
+  /* —— 启动 / 收声 —— */
+  startBtn.addEventListener('click', function(){
+    on = !on;
+    shell.classList.toggle('on', on);
+    startBtn.classList.toggle('on', on);
+    stateEl.classList.toggle('on', on);
+    stateEl.textContent = on ? '运行中' : '未启动';
+    startTxt.textContent = on ? '静默收声' : '启动声场';
+    caption.textContent = on ? '声纹 · 凝结中' : '声纹 · 静默悬浮';
+    caption.classList.toggle('on', on);
+    build();
+  });
+
+  /* —— 渐显 —— */
+  var io = new IntersectionObserver(function(es){
+    es.forEach(function(e){
+      if(e.target === sec){ visible = e.isIntersecting; if(visible) start(); else stop(); }
+      else if(e.isIntersecting){ e.target.classList.add('on'); io.unobserve(e.target); }
+    });
+  }, {threshold:0.06});
+  io.observe(sec);
+  document.querySelectorAll('#studio .lab-fade').forEach(function(el){ io.observe(el); });
+
+  window.addEventListener('resize', resize);
+  document.addEventListener('visibilitychange', function(){ if(!document.hidden && visible) start(); });
+
+  resize();
+  setScene('wild');
+})();
+</script>
+<script>
+/* ===== 留言板 · 评论区（回复互动，无点赞） ===== */
+(function(){
+  var KEY = 'loinaGuestbook';
+  var listEl = document.getElementById('gbList');
+  var textEl = document.getElementById('gbText');
+  var nickEl = document.getElementById('gbNick');
+  var cntEl  = document.getElementById('gbCount');
+  var sendEl = document.getElementById('gbSend');
+  var clrEl  = document.getElementById('gbClear');
+  var totalEl = document.getElementById('gbTotal');
+  var meEl   = document.getElementById('gbMe');
+  var sortEls = [].slice.call(document.querySelectorAll('.gb-sort button'));
+  if(!listEl || !textEl) return;
+
+  var SORT = 'new';
+  var SEED = [{ id:'seed1', n:'Loina', c:'把这里当成雪地里的一盏灯。想说什么都行，我都在。', t:0, owner:true, reps:[] }];
+
+  function uid(){ return 'm' + Date.now().toString(36) + Math.random().toString(36).slice(2, 6); }
+
+  function load(){
+    try{
+      var raw = localStorage.getItem(KEY);
+      if(!raw) return null;
+      var a = JSON.parse(raw);
+      if(!Array.isArray(a)) return null;
+      a.forEach(function(m){
+        if(!m || typeof m !== 'object') return;
+        if(!Array.isArray(m.reps)) m.reps = [];
+        if(!m.id) m.id = uid();
+      });
+      return a.filter(function(m){ return m && m.c; });
+    }catch(e){ return null; }
+  }
+
+  function save(){
+    try{ localStorage.setItem(KEY, JSON.stringify(items.slice(0, 60))); }catch(e){}
+  }
+
+  var items = load() || SEED.slice();
+
+  function tip(msg){
+    var t = document.getElementById('toast');
+    if(!t) return;
+    t.textContent = msg; t.classList.add('show');
+    clearTimeout(window._gbTipT);
+    window._gbTipT = setTimeout(function(){ t.classList.remove('show'); }, 1800);
+  }
+
+  function fmt(t){
+    if(!t) return '置顶';
+    var d = Date.now() - t;
+    if(d < 60e3) return '刚刚';
+    if(d < 3600e3) return Math.floor(d/60e3) + ' 分钟前';
+    if(d < 86400e3) return Math.floor(d/3600e3) + ' 小时前';
+    if(d < 30*86400e3) return Math.floor(d/86400e3) + ' 天前';
+    var dt = new Date(t);
+    return (dt.getMonth()+1) + ' 月 ' + dt.getDate() + ' 日';
+  }
+
+  function hue(name){
+    var s = String(name || 'x'), n = 0;
+    for(var i = 0; i < s.length; i++) n = (n * 31 + s.charCodeAt(i)) % 360;
+    return n;
+  }
+
+  function makeAva(name, small){
+    var d = document.createElement('div');
+    d.className = 'gb-ava' + (small ? ' sm' : '');
+    d.textContent = (String(name || '匿').trim().charAt(0) || '匿').toUpperCase();
+    var hu = hue(name);
+    d.style.background = 'linear-gradient(135deg,hsl(' + hu + ',68%,70%),hsl(' + ((hu + 34) % 360) + ',64%,60%))';
+    return d;
+  }
+
+  function repCount(m){ return (m.reps || []).length; }
+
+  function openReply(m, holder, btn){
+    var exist = holder.querySelector('.gb-rform');
+    if(exist){ exist.parentNode.removeChild(exist); if(btn) btn.classList.remove('on'); return; }
+    var f = document.createElement('div'); f.className = 'gb-rform';
+    var inp = document.createElement('input');
+    inp.type = 'text'; inp.maxLength = 120;
+    inp.placeholder = '回复 @' + String(m.n || '匿名旅人') + '…';
+    var btn2 = document.createElement('button'); btn2.type = 'button'; btn2.textContent = '回复';
+    var commit = function(){
+      var v = inp.value.replace(/\s+$/,'');
+      if(!v.trim()){ tip('先写点什么'); inp.focus(); return; }
+      var name = ((nickEl && nickEl.value) || '').trim().slice(0, 12) || '匿名旅人';
+      m.reps = m.reps || [];
+      m.reps.push({ id: uid(), n: name, c: v.slice(0, 120), t: Date.now(), to: String(m.n || '匿名旅人') });
+      save(); render(); tip('回复已发出');
+    };
+    btn2.addEventListener('click', commit);
+    inp.addEventListener('keydown', function(ev){
+      if(ev.key === 'Enter' && !ev.isComposing){ ev.preventDefault(); commit(); }
+    });
+    f.appendChild(inp); f.appendChild(btn2);
+    holder.appendChild(f);
+    inp.focus();
+    if(btn) btn.classList.add('on');
+  }
+
+  var ICO_REPLY = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.4 8.4 0 0 1-9 8.4 9 9 0 0 1-3.2-.6L3 21l1.7-4.6A8.4 8.4 0 0 1 12 3.1a8.4 8.4 0 0 1 9 8.4z"/></svg>';
+
+  function renderReps(m, holder){
+    if(!m.reps || !m.reps.length) return;
+    var wrap = document.createElement('div'); wrap.className = 'gb-reps';
+    m.reps.forEach(function(r){
+      var row = document.createElement('div'); row.className = 'gb-rep';
+      row.appendChild(makeAva(r.n, true));
+      var body = document.createElement('div'); body.className = 'gb-rep-main';
+      var head = document.createElement('div'); head.className = 'gb-rep-head';
+      var nm = document.createElement('span'); nm.className = 'gb-name'; nm.textContent = String(r.n || '匿名旅人');
+      var tm = document.createElement('span'); tm.className = 'gb-time'; tm.textContent = fmt(r.t);
+      head.appendChild(nm); head.appendChild(tm);
+      var tx = document.createElement('div'); tx.className = 'gb-rep-txt';
+      if(r.to){
+        var at = document.createElement('b'); at.textContent = '回复 @' + r.to + '：';
+        tx.appendChild(at);
+      }
+      tx.appendChild(document.createTextNode(String(r.c || '')));
+      body.appendChild(head); body.appendChild(tx);
+      row.appendChild(body); wrap.appendChild(row);
+    });
+    holder.appendChild(wrap);
+  }
+
+  function render(){
+    listEl.innerHTML = '';
+    var view = items.slice();
+    if(SORT === 'hot'){
+      view.sort(function(a,b){ return repCount(b) - repCount(a) || (b.t || 0) - (a.t || 0); });
+    }else{
+      view.sort(function(a,b){ return (b.t || 0) - (a.t || 0); });
+    }
+    if(totalEl) totalEl.textContent = String(items.length);
+
+    if(!view.length){
+      var em = document.createElement('div'); em.className = 'gb-empty';
+      em.textContent = '还没有人留言 · 你是第一个';
+      listEl.appendChild(em);
+      return;
+    }
+
+    view.forEach(function(m){
+      var row = document.createElement('div'); row.className = 'gb-item';
+      row.appendChild(makeAva(m.n));
+      var main = document.createElement('div'); main.className = 'gb-main';
+
+      var meta = document.createElement('div'); meta.className = 'gb-meta';
+      var nm = document.createElement('span'); nm.className = 'gb-name'; nm.textContent = String(m.n || '匿名旅人');
+      meta.appendChild(nm);
+      if(m.owner || m.t === 0){
+        var bd = document.createElement('span'); bd.className = 'gb-badge'; bd.textContent = '站长';
+        meta.appendChild(bd);
+      }
+      var tm = document.createElement('span'); tm.className = 'gb-time'; tm.textContent = fmt(m.t);
+      meta.appendChild(tm);
+
+      var tx = document.createElement('div'); tx.className = 'gb-txt'; tx.textContent = String(m.c || '');
+
+      var acts = document.createElement('div'); acts.className = 'gb-acts';
+      var btn = document.createElement('button'); btn.type = 'button'; btn.className = 'gb-act';
+      btn.innerHTML = ICO_REPLY + '<span>回复</span>';
+      btn.addEventListener('click', function(){ openReply(m, main, btn); });
+      acts.appendChild(btn);
+      if(repCount(m)){
+        var num = document.createElement('span'); num.className = 'gb-act';
+        num.style.cursor = 'default';
+        num.textContent = repCount(m) + ' 条回复';
+        acts.appendChild(num);
+      }
+
+      main.appendChild(meta); main.appendChild(tx); main.appendChild(acts);
+      renderReps(m, main);
+      row.appendChild(main);
+      listEl.appendChild(row);
+    });
+  }
+
+  function updateCount(){
+    if(cntEl) cntEl.textContent = textEl.value.length + '/200';
+    if(meEl){
+      var name = ((nickEl && nickEl.value) || '').trim();
+      meEl.textContent = name ? name.charAt(0).toUpperCase() : '匿';
+      meEl.style.background = name ? 'linear-gradient(135deg,hsl(' + hue(name) + ',68%,70%),hsl(' + ((hue(name) + 34) % 360) + ',64%,60%))' : '';
+    }
+  }
+
+  function post(){
+    var txt = textEl.value.replace(/\s+$/,'');
+    if(!txt.trim()){ tip('先写点什么吧'); textEl.focus(); return; }
+    var name = ((nickEl && nickEl.value) || '').trim().slice(0, 12) || '匿名旅人';
+    items.unshift({ id: uid(), n: name, c: txt.slice(0, 200), t: Date.now(), reps: [] });
+    save(); render(); textEl.value = ''; updateCount(); tip('留言已发布');
+    listEl.scrollTop = 0;
+  }
+
+  sendEl && sendEl.addEventListener('click', post);
+  textEl.addEventListener('input', updateCount);
+  nickEl && nickEl.addEventListener('input', updateCount);
+  textEl.addEventListener('keydown', function(e){
+    if((e.ctrlKey || e.metaKey) && e.key === 'Enter'){ e.preventDefault(); post(); }
+  });
+  sortEls.forEach(function(b){
+    b.addEventListener('click', function(){
+      SORT = b.getAttribute('data-sort') || 'new';
+      sortEls.forEach(function(x){ x.classList.toggle('on', x === b); });
+      render();
+    });
+  });
+  clrEl && clrEl.addEventListener('click', function(){
+    if(!window.confirm('确定清空本机保存的留言吗？')) return;
+    items = []; save(); render(); tip('已清空');
+  });
+
+  render(); updateCount();
+})();
+</script>
+<script>
+/* ===== AI 母带概念工程：仅响应待开发 ===== */
+(function(){
+  var btns = [].slice.call(document.querySelectorAll('.lab-tool'));
+  if(!btns.length) return;
+  function tip(msg){
+    var t = document.getElementById('toast');
+    if(!t) return;
+    t.textContent = msg; t.classList.add('show');
+    clearTimeout(window._labToolT);
+    window._labToolT = setTimeout(function(){ t.classList.remove('show'); }, 1600);
+  }
+  btns.forEach(function(b){
+    b.addEventListener('click', function(e){
+      if(e){ e.preventDefault(); e.stopPropagation(); }
+      tip('「' + (b.getAttribute('data-name') || '该功能') + '」待开发中');
+    });
+  });
+})();
+</script>
+
 </body>
 </html>
